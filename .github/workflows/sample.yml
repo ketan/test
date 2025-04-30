@@ -11,8 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print variable via vars
-        run: echo {{ vars.SOME_VARIABLE }}
+        run: echo ${{ vars.SOME_VARIABLE }}
       - name: Print variable via env
-        run: echo {{ env.SOME_VARIABLE }}
+        run: echo ${{ env.SOME_VARIABLE }}
       - name: Print variable via $
         run: echo $SOME_VARIABLE
