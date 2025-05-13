@@ -17,5 +17,5 @@ jobs:
       - name: Print variable via $
         run: echo $SOME_VARIABLE
       - name: print git config
-        run: cat ~/.git/config
+        run: git config --list
         
