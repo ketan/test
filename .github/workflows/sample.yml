@@ -10,6 +10,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: Print variable via vars
         run: echo ${{ vars.SOME_VARIABLE }}
       - name: Print variable via env
