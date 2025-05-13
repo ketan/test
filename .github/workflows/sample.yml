@@ -18,4 +18,8 @@ jobs:
         run: echo $SOME_VARIABLE
       - name: print git config
         run: git config --list
+      - name: print git global config
+        run: git config --list --global
+      - name: print git system config
+        run: git config --list --system
         
