@@ -12,6 +12,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: printenv
+      - run: whoami
+      - run: id -a
       - name: Print variable via vars
         run: echo ${{ vars.SOME_VARIABLE }}
       - name: Print variable via env
