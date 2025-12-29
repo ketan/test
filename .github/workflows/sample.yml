@@ -11,9 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: git config list --local
-      - run: git config list --global
-      - run: git config list --system
+      - run: git config list --local || true
+      - run: git config list --global || true
+      - run: git config list --system || true
       - run: cat .git/config
       - run: printenv
       - run: whoami
